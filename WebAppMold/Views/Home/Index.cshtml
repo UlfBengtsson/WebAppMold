@@ -1,0 +1,16 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+@if (ViewBag.Memo != null)
+{
+    <h3>@ViewBag.Memo</h3>
+    <a asp-controller="Home" asp-action="AddMemo">Change the memo</a>
+}
+else
+{
+    <a asp-controller="Home" asp-action="AddMemo">Create a memo</a>
+}

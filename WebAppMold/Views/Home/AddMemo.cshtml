@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "AddMemo";
+}
+
+<h1>Create a Memo</h1>
+
+<form asp-action="AddMemo" method="post">
+    <label for="memo">Memo:</label>
+    <input id="memo" name="memo" type="text" />
+
+    <input type="submit" value="Save memo" />
+</form>
